@@ -9,7 +9,7 @@ class MessageList extends React.Component {
                     return (
                         <div key="{msg}" className="message" >
                             <div className="message-username">{message.senderId}</div>
-                            <div className="message-text">{message.text}</div>
+                            <div className="message-text">{message.parts[0].payload.content}</div>
                         </div>
                     )
                 })}
